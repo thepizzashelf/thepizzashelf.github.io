@@ -33,14 +33,22 @@ layout: home
 
 			<!-- WYSIWYG -->
 
-		<div class="position-absolute" style="bottom:20%">
+		<div class="position-absolute" style="top:20%">
 				<center>
-				<img src="logo.png" style="max-width:25%;/></center>
+				<img src="logo.png" style="max-width:25%;border:1px solid #000000;"/>
+                </center>
 				
-				<h2>Photo Journal</h2> 
-                     <div class="entry-summary">
-							<p><input type=email value="Get email updates"></input></p>
-						</div><br />
+				{% if site.mailchimp %}
+                <center>
+                    <div class="position-relative" style="top:30%; color:black">
+                        <form action="{{ site.mailchimp_embed_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                            <input type="text" placeholder="Enter email. Know when we launch. Buy Pizza Shelf. Make better pizza." autocomplete="off" name="EMAIL" id="mce-EMAIL" style="width:55%;font-size:1em; font-size:1.3vw"><br/><br/>
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn">
+                        </form>
+                    </div>
+                </center>
+                {% endif %}
+                                                                                                                             
 			</div>
 			
 			<div class="gallery fullscreen-gallery kenburns-gallery">
