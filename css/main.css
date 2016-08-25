@@ -316,6 +316,7 @@ body {
 @media (max-width: 768px) {
     #mce-EMAIL {
         width: 90%;
-        font-size: 1.6vw;
+        height: auto;
+        font-size: 2vw;
     }
 }
