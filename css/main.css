@@ -59,12 +59,7 @@ hr.small {
   font-weight: 800;
   letter-spacing: 1px;
 }
-@media (max-width: 768px) {
-    #mce-EMAIL {
-        width: 90%;
-        font-size: 1.6vw;
-    }
-}
+
 #mce-EMAIL {
         width:55%;
         font-size:1em; 
@@ -318,4 +313,9 @@ body {
 .fa-stack-2x {
  color: black;
 }
-
+@media (max-width: 768px) {
+    #mce-EMAIL {
+        width: 90%;
+        font-size: 1.6vw;
+    }
+}
