@@ -313,10 +313,18 @@ body {
 .fa-stack-2x {
  color: black;
 }
+#mc-embedded-subscribe{
+        font-family: Courier New;
+        font-size: 14px;
+}
 @media (max-width: 768px) {
     #mce-EMAIL {
         width: 90%;
         height: auto;
         font-size: 2.5vw;
+    }
+    #mc-embedded-subscribe{
+        font-family: Courier New;
+        font-size: 12px;
     }
 }
